@@ -10,22 +10,6 @@ use Yii;
  * Class SluggableBehavior
  * @package app\components
  * @author  Artem Voitko <r3verser@gmail.com>
- *
- * Usage example:
- *
- * public function behaviors()
- * {
- * return [
- *      [
- *          'class' => \app\components\SluggableBehavior::className(),
- *          'attribute' => 'name',
- *          'slugAttribute' => 'slug',
- *          'transliterator' => 'Russian-Latin/BGN; NFKD',
- *          //Set this to true, if you want to update a slug when source attribute has been changed
- *          'forceUpdate' => false
- *      ],
- *  ];
- * }
  */
 class SluggableBehavior extends \yii\behaviors\SluggableBehavior
 {
